@@ -1,0 +1,59 @@
+.page-bg-1{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.img-bg-1{
+    width: 100%;
+    position: absolute;
+    left: 0px;
+}
+
+.confirm{
+    width: 40%;
+    position: absolute;
+    left: 30%;
+    top: 26rem;
+}
+
+
+
+.title-1{
+    color: #ea6587;
+    font-size: 1.2rem;
+    width: 100%;
+    position: absolute;
+    top: 11rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card{
+    width: 16%;
+    position: absolute;
+    left: 30%;
+    top: 15rem;
+}
+
+.card-num{
+       color: #ea6587;
+       font-size: 2.5rem;
+       width: 65%;
+       position: absolute;
+       top: 15.3rem;
+       text-align: right;
+       font-weight: bold;
+}
+
+.lottery-text{
+       color: #ea6587;
+     font-size: 1.0rem;
+     width: 100%;
+     position: absolute;
+     top: 21.2rem;
+     text-align: center;
+     font-weight: bold;
+}
+
+

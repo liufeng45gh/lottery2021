@@ -1,0 +1,139 @@
+.page-bg{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: #7df2ff;
+}
+
+.img-bg-1{
+    width: 96%;
+    position: absolute;
+    left: 2%;
+    top: 1rem;
+}
+
+.text-1{
+    color: #ad35d4;
+    font-size: 0.9rem;
+    left: 35%;
+    position: absolute;
+    top: 9.6rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.text-2{
+    color: #429afd;
+    font-size: 0.9rem;
+    left: 35%;
+    position: absolute;
+    top: 12.6rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.text-3{
+    color: #f2ae1c;
+    font-size: 0.9rem;
+    left: 35%;
+    position: absolute;
+    top: 15.7rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.text-4{
+    color: #ffa200;
+    font-size: 0.9rem;
+    left: 35%;
+    position: absolute;
+    top: 19.0rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.text-5{
+    color: #5cc1a4;
+    font-size: 0.9rem;
+    left: 35%;
+    position: absolute;
+    top: 22.4rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.confirm{
+    width: 40%;
+    position: absolute;
+    left: 30%;
+    top: 44rem;
+}
+
+.phone-bg{
+    width: 75%;
+    position: absolute;
+    left: 12.5%;
+    top: 31rem;
+}
+
+.phone-input{
+  width: 75%;
+  position: absolute;
+  left: 12.5%;
+  top: 31rem;
+  height: 2.3rem;
+  background: transparent;
+  border: none;
+  text-indent: 1rem;
+}
+
+.name-bg{
+    width: 75%;
+    position: absolute;
+    left: 12.5%;
+    top: 37rem;
+}
+
+.name-input{
+  width: 75%;
+  position: absolute;
+  left: 12.5%;
+  top: 37rem;
+  height: 2.3rem;
+  background: transparent;
+  border: none;
+  text-indent: 1rem;
+}
+
+
+
+
+.title-1{
+     color: #9d0000;
+     font-size: 1.05rem;
+     width: 75%;
+     left: 12.5%;
+     position: absolute;
+     top: 29rem;
+     font-weight: bold;
+     text-align: left;
+}
+
+.title-2{
+     color: #9d0000;
+     font-size: 1.05rem;
+     width: 75%;
+     left: 12.5%;
+     position: absolute;
+     top: 35rem;
+     font-weight: bold;
+     text-align: left;
+}
+
+.b5-3{
+    width: 77%;
+    position: absolute;
+    left: 11.5%;
+    top: 42rem;
+}
+

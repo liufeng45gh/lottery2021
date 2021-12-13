@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lucifer.mapper.WishMapper">
+    <resultMap type="com.lucifer.model.Wish" id="WishMap">
+        <result column="id" property="id"/>
+        <result column="member_id" property="memberId"/>
+        <result column="nick_name" property="nickName"/>
+        <result column="text" property="text"/>
+        <result column="is_show" property="isShow"/>
+    </resultMap>
+    <insert id="insertWish">
+        insert into wish
+        (member_id, text,created_at)
+        values
+        (#{memberId},#{text},now())
+    </insert>
+    <select id="getWishNewList"  resultMap="WishMap">
+        select w.id,w.text,w.member_id,m.nick_name from wish w
+        left outer join member m
+        on w.member_id = m.id
+        order by w.id desc limit 20
+    </select>
+
+    <select id="getWishNewShowList"  resultMap="WishMap">
+        select w.id,w.text,w.member_id,m.nick_name from wish w
+        left outer join member m
+        on w.member_id = m.id
+        where w.is_show = 1
+        order by w.id desc limit 20
+    </select>
+
+    <select id="wishCmsSearch" resultMap="WishMap">
+        ${_parameter}
+    </select>
+
+    <select id="wishCmsSearchCount" resultType="java.lang.Integer">
+        ${_parameter}
+    </select>
+
+    <update id="setShow">
+        update wish set is_show = #{isShow} where id = #{id}
+    </update>
+
+
+</mapper>

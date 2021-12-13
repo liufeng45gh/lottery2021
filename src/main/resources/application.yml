@@ -1,0 +1,65 @@
+server:
+   port: 8086
+   resetCache: true
+spring:
+  redis:
+    host: localhost
+    port: 6379
+    password: lucifer-hfc
+# DATASOURCE
+jdbc-user:
+  driverClass: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://www.haifuc.cn/oauth2-user?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&rewriteBatchedStatements=TRUE&serverTimezone=Asia/Shanghai
+  username: root
+  password: lucifer-HFC-20170501
+jdbc:
+  driverClass: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://www.haifuc.cn/lottery?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&rewriteBatchedStatements=TRUE&serverTimezone=Asia/Shanghai
+  username: root
+  password: lucifer-HFC-20170501
+
+#jdbc:
+#    driverClass: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost/oauth2-user?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&rewriteBatchedStatements=TRUE&zeroDateTimeBehavior
+#    username: root
+#    password:
+#jdbc-hfc:
+#    driverClass: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost/hfc?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&rewriteBatchedStatements=TRUE&zeroDateTimeBehavior
+#    username: root
+#    password:
+
+
+# MyBatis
+
+mybatis:
+    typeAliasesPackage: com.lucifer
+    mapperLocations: classpath:/sql-mapper/*.xml
+    configLocation: classpath:/mybatis-config.xml
+
+qiniu:
+  accessKey: eeYtcWvGPXqjEiTIxDljeVu8qxFpwdXOvGo4PURq
+  secretKey: LHkSG-HRLccuUYSgb-TX0ZcDrsyUMEzSg6Z3GG6G
+  publicBucket: vote-2
+  url: http://osienakpr.bkt.clouddn.com/
+multipart:
+  maxFileSize: 10Mb
+  maxRequestSize: 30Mb
+solr:
+  url:
+    news: http://test.haifuc.cn:8983/solr/news
+    artist: http://test.haifuc.cn:8983/solr/artist
+    appreciate: http://test.haifuc.cn:8983/solr/appreciate
+sms:
+  sendCodeUrl: https://api.netease.im/sms/sendcode.action
+  appKey: 80f0cbe03428deb5f520005694aeffdd
+  appSecret: ef2c21102cb8
+  verifyCodeUrl: https://api.netease.im/sms/verifycode.action
+wx:
+  appId: wx1b792045969d2147
+  secret: d5fd23be8b1e81563c13205ad5fcdef9
+
+
+
+
+

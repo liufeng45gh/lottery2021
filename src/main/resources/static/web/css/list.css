@@ -1,0 +1,130 @@
+.page-bg-1{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.img-bg-1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+}
+
+.logo-1{
+    width: 2.3rem;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
+
+.font-1{
+
+}
+
+.praise-bg{
+    width: 18rem;
+    height: 2.5rem;
+    position: absolute;
+    left: 3.8rem;
+    top: 14rem;
+}
+.praise-div{
+     width: 18rem;
+      height: 2.5rem;
+      position: absolute;
+      left: 3.8rem;
+      top: 14rem;
+     color: white;
+     font-size: 1rem;
+     line-height: 2.5rem;
+}
+
+
+.map-1{
+     width: 22rem;
+     position: absolute;
+     left: 1.9rem;
+     top: 17.6rem;
+}
+
+.ma-1{
+   width: 4rem;
+       position: absolute;
+       left: 1rem;
+       bottom: 1rem;
+}
+
+.title-1{
+     color: #333;
+     font-size: 0.9rem;
+     text-align: right;
+     width: 25rem;
+     position: absolute;
+     top: 2rem;
+     font-weight: bold;
+     right: 1rem;
+}
+
+.title-2{
+       color: #333;
+       font-size: 0.8rem;
+       text-align: right;
+       width: 25rem;
+       position: absolute;
+       top: 4rem;
+       font-weight: bold;
+       right: 1rem;
+}
+
+.title-3{
+    color: #e65100;
+    font-size: 1.6rem;
+    -webkit-text-stroke: 0.005rem white;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 15rem;
+}
+
+.title-4{
+    color: #e65100;
+    font-size: 1.4rem;
+    -webkit-text-stroke: 0.005rem white;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 19rem;
+}
+
+.btn-1{
+    width: 60%;
+    position: absolute;
+    left: 20%;
+    top: 15.4rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: white;
+    background-color: #55ce9f;
+    border-radius: 1.4rem;
+    height: 5.5rem;
+    line-height: 5.5rem;
+    text-decoration-line: none;
+}
+
+.btn-2{
+       width: 60%;
+       position: absolute;
+       left: 20%;
+       top: 28.4rem;
+       text-align: center;
+       font-size: 1.7rem;
+       color: white;
+       background-color: #2a90d7;
+       border-radius: 1.4rem;
+       height: 5.5rem;
+       line-height: 5.5rem;
+       text-decoration-line: none;
+}
+
+

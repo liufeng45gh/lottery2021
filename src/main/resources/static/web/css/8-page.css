@@ -1,0 +1,32 @@
+.page-bg-8{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.img-bg-8{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+}
+.title-8{
+    width: 19rem;
+    position: absolute;
+    left: 4.0rem;
+    top: 5.1rem;
+}
+
+.font-8{
+    width: 21rem;
+    position: absolute;
+    left: 2.0rem;
+    top: 15.7rem;
+}
+
+.btn-praise-8{
+    width: 16rem;
+    position: absolute;
+    left: 5.3rem;
+    bottom: 2.7rem;
+}

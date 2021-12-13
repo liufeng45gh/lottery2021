@@ -1,0 +1,60 @@
+.page-bg-1{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.img-bg-1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+}
+
+.logo-1{
+    width: 2.3rem;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
+
+
+
+.title-1{
+    color: #FC9F06;
+    font-size: 1.9rem;
+    -webkit-text-stroke: 0.005rem white;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 12rem;
+    font-weight: bold;
+    color: #80c184;
+}
+
+.title-2{
+       color: #FC9F06;
+       font-size: 1.2rem;
+       -webkit-text-stroke: 0.005rem white;
+       text-align: center;
+       width: 40%;
+       position: absolute;
+       top: 19rem;
+       font-weight: bold;
+       left: 30%;
+}
+
+
+.right-count{
+    width:50%;
+    display:inline-block;
+    float:left;
+    color: #378ce6;
+}
+.wrong-count{
+    width:50%;
+    display:inline-block;
+    float:left;
+    color: #e13228;
+}
+

@@ -1,0 +1,162 @@
+.page-bg-7{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.img-bg-7{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+}
+
+.img-bg-7-border{
+    width: 24rem;
+     position: absolute;
+     left: 1.0rem;
+     top: 1.4rem;
+ }
+
+ .img-invite-7{
+    width: 12rem;
+    position: absolute;
+    left: 7.0rem;
+    top: 4.4rem;
+ }
+
+.img-line-7-1{
+    width: 14rem;
+    position: absolute;
+    left: 6.0rem;
+    top: 13.4rem;
+}
+
+
+
+
+
+.img-submit-7{
+    width: 9.8rem;
+    position: absolute;
+    left: 8.0rem;
+    top: 30.4rem;
+}
+
+.img-line-7-2{
+    width: 14rem;
+    position: absolute;
+    left: 6.0rem;
+    top: 36.4rem;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+color: #AD7923;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+color: #AD7923;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+color: #AD7923;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+color: #AD7923;
+}
+
+.name_text{
+    width: 8rem;
+    position: absolute;
+    left: 0rem;
+    top: 16.4rem;
+    text-align: right;
+    font-size: 1rem;
+    color: #AD7923;
+}
+
+.name_input{
+    width: 11rem;
+   position: absolute;
+   left: 9rem;
+   top: 15.9rem;
+   text-align: left;
+   font-size: 1rem;
+   color: #AD7923;
+   border: 0.05rem solid;
+   height: 1.9rem;
+   border-radius: 0.2rem;
+   padding-left: 0.4rem;
+}
+
+.phone_text{
+    width: 8rem;
+    position: absolute;
+    left: 0rem;
+    top: 19.4rem;
+    text-align: right;
+    font-size: 1rem;
+    color: #AD7923;
+}
+
+.phone_input{
+    width: 11rem;
+   position: absolute;
+   left: 9rem;
+   top: 19.0rem;
+   text-align: left;
+   font-size: 1rem;
+   color: #AD7923;
+   border: 0.05rem solid;
+   height: 1.9rem;
+   border-radius: 0.2rem;
+   padding-left: 0.4rem;
+}
+
+
+.company_text{
+    width: 8rem;
+    position: absolute;
+    left: 0rem;
+    top: 22.4rem;
+    text-align: right;
+    font-size: 1rem;
+    color: #AD7923;
+}
+
+.company_input{
+    width: 11rem;
+   position: absolute;
+   left: 9rem;
+   top: 22.0rem;
+   text-align: left;
+   font-size: 1rem;
+   color: #AD7923;
+   border: 0.05rem solid;
+   height: 1.9rem;
+   border-radius: 0.2rem;
+   padding-left: 0.4rem;
+}
+
+
+.position_text{
+    width: 8rem;
+    position: absolute;
+    left: 0rem;
+    top: 25.4rem;
+    text-align: right;
+    font-size: 1rem;
+    color: #AD7923;
+}
+
+.position_input{
+    width: 11rem;
+   position: absolute;
+   left: 9rem;
+   top: 25.0rem;
+   text-align: left;
+   font-size: 1rem;
+   color: #AD7923;
+   border: 0.05rem solid;
+   height: 1.9rem;
+   border-radius: 0.2rem;
+   padding-left: 0.4rem;
+}

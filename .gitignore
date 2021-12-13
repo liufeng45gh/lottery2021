@@ -1,0 +1,33 @@
+# Operating System Files
+
+*.DS_Store
+Thumbs.db
+*.sw?
+.#*
+*#
+*~
+*.sublime-*
+
+# Build Artifacts
+
+.gradle/
+build/
+target/
+bin/
+dependency-reduced-pom.xml
+
+# Eclipse Project Files
+
+.classpath
+.project
+.settings/
+
+# IntelliJ IDEA Files
+
+*.iml
+*.ipr
+*.iws
+*.idea
+cop-cloud/VerifyCodeService/.mvn/wrapper/maven-wrapper.properties
+cop-cloud/VerifyCodeService/.mvn/wrapper/maven-wrapper.jar
+cop-cloud/VerifyCodeService/.mvn/wrapper/MavenWrapperDownloader.java

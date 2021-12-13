@@ -1,0 +1,63 @@
+.page-bg-2{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: #fff4e8;
+}
+
+.wish-loop-bg{
+    width: 100%;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+}
+.b2-5{
+    width: 100%;
+    position: absolute;
+    left: 0rem;
+    top: 1.8rem;
+}
+
+.p2-title{
+    width: 82%;
+    position: absolute;
+    left: 9%;
+    top: 1.8rem;
+}
+.baby{
+    width: 91%;
+    position: absolute;
+    left: 4.5%;
+    top: 11.8rem;
+}
+.wish-input-bg{
+    width: 98%;
+    position: absolute;
+    left: 1%;
+   bottom: 0.0rem;
+}
+
+.wish-input{
+  width: 75%;
+  position: absolute;
+  left: 12.5%;
+   bottom: 9.0rem;
+  height: 2.3rem;
+  background: transparent;
+  border: none;
+  text-indent: 1rem;
+}
+
+.p2-submit{
+    width: 32%;
+    position: absolute;
+    left: 34%;
+    bottom: 1.5rem;
+}
+
+.font-2{
+    width: 24.3rem;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+}

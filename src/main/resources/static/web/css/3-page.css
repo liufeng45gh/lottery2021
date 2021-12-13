@@ -1,0 +1,96 @@
+.page-bg-3{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: #7df2ff;
+}
+
+
+.title-3{
+       width: 100%;
+       position: absolute;
+       left: 0rem;
+       top: 0rem;
+}
+.img-bg-3{
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 0rem;
+}
+.my{
+
+    width: 5rem;
+    position: absolute;
+    left: 0px;
+    top: 10.56rem;
+}
+
+.my-text{
+
+    width: 5rem;
+    height:2rem;
+    position: absolute;
+    left: 0px;
+    top: 10.56rem;
+    font-size: 0.93rem;
+    line-height: 1.9rem;
+    color: #9d0000;
+}
+
+.opportunity{
+    width: 11.28rem;
+    position: absolute;
+    left: 7rem;
+    top: 10.56rem;
+}
+
+.opportunity-text{
+    width: 11.28rem;
+    position: absolute;
+    left: 7rem;
+    top: 10.56rem;
+    height:2rem;
+   font-size: 0.93rem;
+   line-height: 1.9rem;
+   color: white;
+}
+
+.rotate-bg{
+    width: 92%;
+    position: absolute;
+    left: 4%;
+    top: 13.16rem;
+}
+
+.rotate-dish{
+    width: 68%;
+    position: absolute;
+    left: 16%;
+    top: 16.16rem;
+}
+
+.rotate-center{
+    width: 92%;
+    position: absolute;
+    left: 4%;
+    top: 13.16rem;
+}
+
+.opportunity-text2{
+   width: 11.28rem;
+    position: absolute;
+    left: 7rem;
+    bottom: 5.5rem;
+    height:2rem;
+   font-size: 0.93rem;
+   line-height: 1.9rem;
+   color: #0a6e79;
+}
+.lottery-start{
+    width: 36%;
+    position: absolute;
+    left: 32%;
+    bottom: 2.16rem;
+}
+

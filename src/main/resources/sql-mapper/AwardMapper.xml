@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lucifer.mapper.AwardMapper">
+    <resultMap type="com.lucifer.model.MemberAward" id="AwardCountMap">
+        <result column="award_id" property="awardId"/>
+        <result column="count" property="count"/>
+    </resultMap>
+
+    <resultMap type="com.lucifer.model.AwardDayConfig" id="AwardDayConfigMap">
+        <result column="day" property="day"/>
+        <result column="config_id" property="configId"/>
+        <result column="rate" property="rate"/>
+        <result column="count" property="count"/>
+    </resultMap>
+
+    <resultMap type="com.lucifer.model.Member" id="MemberMap">
+        <id column="id" property="id"/>
+        <result column="wx_id" property="wxId"/>
+        <result column="phone" property="phone"/>
+        <result column="real_name" property="realName"/>
+        <result column="avatar" property="avatar"/>
+        <result column="nick_name" property="nickName"/>
+        <result column="created_at" property="createdAt"/>
+        <result column="updated_at" property="updatedAt"/>
+    </resultMap>
+
+    <select id="getMemberAwardCount"  resultMap="AwardCountMap">
+        select award_id , count(award_id) count
+        from member_award
+        where member_id = #{memberId}
+        group by award_id
+    </select>
+
+    <select id="getAwardDay" resultType="java.lang.String">
+        select id from award_day where id = #{id}
+    </select>
+
+    <insert id="insertAwardDay">
+        insert into award_day (id)  values (#{id})
+    </insert>
+    <delete id="deleteAwardDay">
+        delete from award_day where id = #{id}
+    </delete>
+
+    <select id="getAwardDayConfigList" resultMap="AwardDayConfigMap">
+        select * from award_day_config where day = #{day}
+    </select>
+
+    <select id="getAllAwardDayConfigList" resultMap="AwardDayConfigMap">
+        select * from award_day_config order by day , config_id
+    </select>
+    
+    <select id="getAwardDayCount" resultType="java.lang.Integer">
+        select a.count from award_day_count a where a.day = #{day} and config_id = #{configId}
+    </select>
+
+    <select id="countAwardDayCount" resultType="java.lang.Integer">
+         select count(*) from  member_award
+        where award_id = #{configId}
+        and to_days (created_at) = to_days(#{day})
+    </select>
+
+    <select id="getAwardTotalCount" resultType="java.lang.Integer">
+        select a.count from award_total_count a where config_id = #{configId}
+    </select>
+    <select id="countAwardTotalCount" resultType="java.lang.Integer">
+        select count(*) from  member_award
+        where award_id = #{configId}
+    </select>
+
+    <insert id="insertMemberAward">
+        insert into member_award (member_id,award_id,created_at) values (#{memberId},#{awardId},now())
+    </insert>
+
+    <update id="updateDayAwardCount">
+        update award_day_count a set a.count = #{count} where a.day = #{day} and a.config_id = #{configId}
+    </update>
+    <insert id="insertDayAwardCount">
+        insert into award_day_count (day,config_id,count) value (#{day},#{configId},#{count});
+    </insert>
+
+    <update id="updateTotalAwardCount">
+        update award_total_count a set a.count = #{count} where  a.config_id = #{configId}
+    </update>
+    
+    <insert id="insertTotalAwardCount">
+        insert into award_total_count (config_id,count) values (#{configId},#{count})
+    </insert>
+
+    <select id="rewardList" resultMap="MemberMap">
+        select ma.id,m.wx_id,m.nick_name,m.phone,m.avatar,m.real_name,ma.created_at
+        from member_award ma
+        left outer join
+        member m
+        on ma.member_id = m.id
+        where ma.award_id = #{awardId}
+        order by ma.id
+    </select>
+
+    <select id="getAwardDayList" resultType="java.lang.String">
+        select id from award_day order by id
+    </select>
+</mapper>

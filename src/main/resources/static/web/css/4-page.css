@@ -1,0 +1,34 @@
+.page-bg-4{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.img-bg-4{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+}
+
+.title-4-1{
+    width: 21rem;
+    position: absolute;
+    left: 2.6rem;
+    top: 3.4rem;
+}
+
+.title-4-2{
+    width: 23rem;
+    position: absolute;
+    left: 1.5rem;
+    bottom: 17.4rem;
+}
+
+.wh-4{
+    width: 23rem;
+    position: absolute;
+    left: 1.5rem;
+    bottom: 1.4rem;
+}
+

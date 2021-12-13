@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lucifer.mapper.MemberMapper">
+	<resultMap type="com.lucifer.model.Member" id="MemberMap">
+		<id column="id" property="id"/>
+		<result column="wx_id" property="wxId"/>
+		<result column="phone" property="phone"/>
+		<result column="real_name" property="realName"/>
+		<result column="avatar" property="avatar"/>
+		<result column="nick_name" property="nickName"/>
+		<result column="created_at" property="createdAt"/>
+		<result column="updated_at" property="updatedAt"/>
+	</resultMap>
+
+	<select id="getByPhone" resultMap="MemberMap">
+	select * from member where telephone = #{telephone}
+	</select>
+	<insert id="insertMember" useGeneratedKeys="true" keyProperty="id">
+		insert into member
+		(wx_id,nick_name,avatar,created_at,updated_at)
+		values
+		(#{wxId}, #{nickName},#{avatar},now(), now())
+	</insert>
+	<insert id="insertMemberToken">
+		insert into m_access_token
+		(member_id,token)
+		values
+		(#{memberId},#{token})
+	</insert>
+
+	<select id="getMemberIdByToken" resultType="java.lang.Long">
+		select member_id from m_access_token where token = #{token}
+	</select>
+
+	<select id="getMemberById" resultMap="MemberMap">
+		select * from member where id = #{id}
+	</select>
+
+	<select id="getMemberByWxId" resultMap="MemberMap">
+		select * from member where wx_id = #{wxId}
+	</select>
+
+	<update id="updateMemberInfo">
+		update member
+		set
+		real_name = #{realName},
+		phone = #{phone}
+		where id = #{id}
+	</update>
+
+	<select id="getSysConfigValue" resultType="java.lang.String">
+		select value from sys_config where sys_config.key = #{key}
+	</select>
+
+	<update id="updateSysConfigValue">
+		update sys_config
+		set value = #{value}
+		where sys_config.key = #{key}
+	</update>
+	
+	<select id="memberCmsSearch" resultMap="MemberMap">
+		${_parameter}
+	</select>
+
+	<select id="memberCmsSearchCount" resultType="java.lang.Integer">
+		${_parameter}
+	</select>
+
+</mapper>
