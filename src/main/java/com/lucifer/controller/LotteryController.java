@@ -12,6 +12,9 @@ import com.lucifer.service.LotteryService;
 import com.lucifer.service.WxService;
 import com.lucifer.utils.Result;
 import com.lucifer.utils.StringHelper;
+
+import io.swagger.annotations.Api;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,6 +23,8 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @Controller
+@Api(value = "首页",tags = "首页")
+@Slf4j
 public class LotteryController {
 
     @Resource
@@ -47,6 +52,7 @@ public class LotteryController {
         String cardText = award.name;
         request.setAttribute("cardName",cardName);
         request.setAttribute("cardText",cardText);
+        log.info("dsfsdfsfaf");
         return "/web/win";
     }
 

@@ -7,7 +7,7 @@ import com.lucifer.model.user.User;
 
 import com.lucifer.service.cms.UserLoginService;
 import com.lucifer.service.cms.UserService;
-import com.wordnik.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;

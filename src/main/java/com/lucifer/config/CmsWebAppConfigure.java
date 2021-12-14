@@ -35,6 +35,7 @@ public class CmsWebAppConfigure extends WebMvcConfigurerAdapter {
 
         //registry.addInterceptor(mobileCheckAuthInterceptor).addPathPatterns("/mobile/**");
         super.addInterceptors(registry);
+        //org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration
     }
 
 }
