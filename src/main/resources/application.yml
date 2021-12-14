@@ -3,20 +3,20 @@ server:
    resetCache: true
 spring:
   redis:
-    host: localhost
+    host: 152.136.137.43
     port: 6379
-    password: lucifer-hfc
+    password: lucifer-1qaz2wsx
 # DATASOURCE
 jdbc-user:
   driverClass: com.mysql.cj.jdbc.Driver
-  url: jdbc:mysql://www.haifuc.cn/oauth2-user?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&rewriteBatchedStatements=TRUE&serverTimezone=Asia/Shanghai
-  username: root
-  password: lucifer-HFC-20170501
+  url: jdbc:mysql://152.136.137.43/oauth2-user?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&rewriteBatchedStatements=TRUE&serverTimezone=Asia/Shanghai
+  username: klny
+  password: lucifer-1qaz2wsx
 jdbc:
   driverClass: com.mysql.cj.jdbc.Driver
-  url: jdbc:mysql://www.haifuc.cn/lottery?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&rewriteBatchedStatements=TRUE&serverTimezone=Asia/Shanghai
-  username: root
-  password: lucifer-HFC-20170501
+  url: jdbc:mysql://152.136.137.43/lottery?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&rewriteBatchedStatements=TRUE&serverTimezone=Asia/Shanghai
+  username: klny
+  password: lucifer-1qaz2wsx
 
 #jdbc:
 #    driverClass: com.mysql.jdbc.Driver
