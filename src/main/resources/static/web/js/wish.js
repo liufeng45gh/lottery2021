@@ -26,11 +26,19 @@ $(document).ready(function(){
                     },2000)
                 }else {
                     layer.msg("系统错误",{icon: 5});
+                    setTimeout(function(){
+                        swiper.slideTo(2);
+                         refreshResidue();
+                    },2000);
                 }
 
             },
             error: function (message) {
                 layer.msg("系统错误",{icon: 5});
+                 setTimeout(function(){
+                    swiper.slideTo(2);
+                     refreshResidue();
+                },2000);
             }
         });
 
